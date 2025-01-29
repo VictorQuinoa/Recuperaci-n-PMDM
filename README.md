@@ -34,7 +34,7 @@ enum class Estados (val value: Int, val label: String) {
 
 Esta clase cuenta con la lógica del programa en varios metodos.
 
-- iniciarJuego(), cambia los estados y asigna la palabra llamando al metodo generarPalabra()
+- iniciarJuego(), cambia los estados de inicio a generando y asigna la palabra llamando al metodo generarPalabra()
 
 ```
 fun iniciarJuego() {
@@ -53,7 +53,7 @@ fun generarPalabra(): Diccionario {
     }
 ```
 
-- verificarRespuesta(), comprueba si la palabra introducida por el usuario en la UI coincide con la generada, marcando la victoria o fallo.
+- verificarRespuesta(), comprueba si la palabra introducida por el usuario en la UI coincide con la generada, cambiando al estado de victoria o perdido.
 
 ```
  fun verificarRespuesta(respuesta: String) {
