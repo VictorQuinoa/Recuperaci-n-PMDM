@@ -1,6 +1,10 @@
 # EXAMEN 
 
-Para esta aplicación he empleado 3 clases .
+Para esta aplicación he empleado 3 clases:
+
+Datos: Contiene los datos de la aplicación.
+ModelView: Gestiona la lógica.
+UI: Da la capacidad de interacción al usuario.
 
 ### Datos: 
 
@@ -41,7 +45,7 @@ fun iniciarJuego() {
     }
 ```
 
-- generarPalabra(), genera la palabra a elegir mediante un número aleatorio correspondiente al id.
+- generarPalabra(), genera la palabra (guardada en la clase datos) a elegir mediante un número aleatorio correspondiente al id.
 ```
 fun generarPalabra(): Diccionario {
         val palabras = Diccionario.entries.toList()
@@ -64,7 +68,7 @@ fun generarPalabra(): Diccionario {
     }
 ```
 
-- obtenerPista(), busca el sinónimo de la palabra generada y lo devuelve.
+- obtenerPista(), busca el sinónimo en la clase datos de la palabra generada y lo devuelve.
 
 ```
  fun obtenerPista(): String {
