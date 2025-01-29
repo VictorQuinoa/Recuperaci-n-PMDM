@@ -84,4 +84,6 @@ La UI observa el cambio en el estado mediante un observer y recibe la respuesta 
 
 La interfaz muestra la pista y permite al usuario introducir una palabra, que enviará al metodo verificar respuesta para comparar. En caso afirmativo se lanza el mensaje de victoria, en caso de derrota, muestra la palabra generada.
 
+Los diferentes botones de la interfaz se van activando dependiendo del estado de la aplicación, para ser usados solo cuando se deba y no causar fallos.
+
 En caso de perder, se da otra oportunidad de jugar al usuario.
